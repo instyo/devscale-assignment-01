@@ -1,0 +1,34 @@
+{
+  "name": "devscale-assignment-01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm withenv tsx ./src/index.ts",
+    "withenv": "dotenv -e ./.env"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "11.24.0",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@11.24.0",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^26.4.1",
+    "dotenv": "^17.4.2",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@anvia/core": "^1.0.9",
+    "@anvia/openai": "^1.0.9",
+    "@anvia/studio": "^1.0.14",
+    "zod": "^4.5.4"
+  }
+}
